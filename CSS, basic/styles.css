@@ -1,0 +1,48 @@
+/* Container to flexible boxes in a column: header, main, footer */
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container to flexible boxes in a column: article, aside */
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+}
+
+/* The article takes 2/3 of the width of the page has a vertical scrolling */
+article {
+    flex: 2;
+    overflow-y: auto
+}
+
+/* The aside takes 1/3 of the width of the page and has a vertical scrolling */
+aside {
+    flex: 1;
+    overflow-y: auto
+}
+
+article {
+    background-color: #635ced;
+    padding: 20px;
+    text-align: justify;
+}
+
+aside {
+    background-color: #27a4fe;
+    padding: 20px;
+    text-align: justify;
+}
+
+header {
+    text-align: center;
+    background-color: #8effff;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: #8ef2ff;
+    padding: 10px;
+}
